@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "SQSUploader": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "distributionName": ""
+    }
+  }
+}
