@@ -1,10 +1,19 @@
-# AWS SQS Uploader and Reader Service
+# Logging Service - Uploading, Reading, and Storing JSON Files in AWS
 
-This project demonstrates how to use Amazon Simple Queue Service (SQS) for uploading and reading messages to and from SQS queues. It consists of two services: SQSUploader and SQSReaderService, as well as a DynamoDBWriterService.
+This project demonstrates how to use Amazon Simple Queue Service (SQS) for uploading and reading messages to and from SQS queues. It consists of two services: SQSUploader and SQSReaderService, along with a DynamoDBWriterService.
+
+## Usage
+
+To use this project:
+
+1. Run the SQSUploader and the SQSReaderService.
+2. Add a JSON file to the folder specified in `SQSUploader\appsettings.json`.
+3. The JSON file will be uploaded to the Amazon SQS queue specified in `Configurations\appsettings.json`.
+4. The JSON will be serialized into a DynamoDB document and stored in the table specified in `DataBase\appsettings.json`.
 
 ## Prerequisites
 
-Before you get started, make sure you have the following prerequisites in place:
+Before you get started, ensure that you have the following prerequisites:
 
 - [.NET Core SDK](https://dotnet.microsoft.com/download)
 - An Amazon Web Services (AWS) account
